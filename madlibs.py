@@ -60,6 +60,8 @@ def show_madlib():
     noun = request.args.get("noun")
     person = request.args.get("person")
     adjective = request.args.get("adjective")
+    foodtype = request.args.get("foodtype")
+    places = request.args.get("places")
 
     return render_template(
         "madlib.html",
@@ -67,6 +69,8 @@ def show_madlib():
        noun=noun,
        person=person,
        adjective=adjective,
+       foodtype=foodtype,
+       places=places,
        )
     
 
